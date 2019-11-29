@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>jpeezzy.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2019 21:59:51 -0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="jpeezzy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Store</title>
-      <link>http://example.org/store/</link>
+      <link>jpeezzy.github.io/store/</link>
       <pubDate>Thu, 28 Nov 2019 13:10:59 -0800</pubDate>
       
-      <guid>http://example.org/store/</guid>
+      <guid>jpeezzy.github.io/store/</guid>
       <description>Reserved for a store I may add later.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>jpeezzy.github.io/about/</link>
       <pubDate>Thu, 28 Nov 2019 01:30:22 -0800</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>jpeezzy.github.io/about/</guid>
       <description>Who am I? Great question! As of right now, I am an engineer with a bit of spare time. What do I do? Not sure.
 Møøn will start selling hardware to consumers at the computer and mobile market. Honestly, this about page needs to be way longer. Maybe something motivational about how we&#39;re different, and treat our workers like family or some deceptive message about the work culture. Maybe how we&#39;re different from all the thousands upon thousands of engineering firms out there.</description>
     </item>
     
     <item>
       <title>First Post</title>
-      <link>http://example.org/posts/first-post/</link>
+      <link>jpeezzy.github.io/posts/first-post/</link>
       <pubDate>Wed, 27 Nov 2019 23:10:16 -0800</pubDate>
       
-      <guid>http://example.org/posts/first-post/</guid>
+      <guid>jpeezzy.github.io/posts/first-post/</guid>
       <description>After two days, I&#39;m finally able to talk to the world using the Hugo framework!</description>
     </item>
     
