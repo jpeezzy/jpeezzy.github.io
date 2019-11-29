@@ -11,5 +11,33 @@
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Store</title>
+      <link>http://example.org/store/</link>
+      <pubDate>Thu, 28 Nov 2019 13:10:59 -0800</pubDate>
+      
+      <guid>http://example.org/store/</guid>
+      <description>Reserved for a store I may add later.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Thu, 28 Nov 2019 01:30:22 -0800</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Who am I? Great question! As of right now, I am an engineer with a bit of spare time. What do I do? Not sure.
+Møøn will start selling hardware to consumers at the computer and mobile market. Honestly, this about page needs to be way longer. Maybe something motivational about how we&#39;re different, and treat our workers like family or some deceptive message about the work culture. Maybe how we&#39;re different from all the thousands upon thousands of engineering firms out there.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>http://example.org/posts/first-post/</link>
+      <pubDate>Wed, 27 Nov 2019 23:10:16 -0800</pubDate>
+      
+      <guid>http://example.org/posts/first-post/</guid>
+      <description>Hello Hugo world! No more excuses for having no blog or documentation now!</description>
+    </item>
+    
   </channel>
 </rss>
