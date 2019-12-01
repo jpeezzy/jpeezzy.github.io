@@ -36,7 +36,8 @@ Møøn will start selling hardware to consumers at the computer and mobile marke
       <pubDate>Wed, 27 Nov 2019 23:10:16 -0800</pubDate>
       
       <guid>/posts/first-post/</guid>
-      <description>After two days, I&#39;m finally able to talk to the world using the Hugo framework!</description>
+      <description>After two days, I&#39;m finally able to talk to the world using the Hugo framework!
+There are a few things I needed to read to get it up and running, including the hugo documentation. Setting up the domain was the hardest part. Because ø is non-ascii, I needed to convert my website to punycode and update the CNAME.</description>
     </item>
     
   </channel>
