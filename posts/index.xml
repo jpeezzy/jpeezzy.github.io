@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 23:10:16 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 13:24:45 -0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hands, Colemak, Caps Lock, and MacOs</title>
+      <link>/posts/colemak-and-caps-lock/</link>
+      <pubDate>Thu, 05 Dec 2019 13:24:45 -0800</pubDate>
+      
+      <guid>/posts/colemak-and-caps-lock/</guid>
+      <description>Recently I have experienced hand pain while typing. This pain can be attributed to excessively typing and practicing guitar. The standard procedures to alleviate the pain are:
+ hand stretches finger exercises rest.  But I would rather be productive. Instead of resting my hands, I&#39;ve been learning colemak, an alternate keyboard layout designed to minimize hand strain. One nice aspect about colemak is that it maps the caps lock key to backspace, minimizing key travel (more on this later).</description>
+    </item>
     
     <item>
       <title>First Post</title>

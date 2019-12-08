@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/colemak-and-caps-lock/</loc>
+    <lastmod>2019-12-05T13:24:45-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-12-05T13:24:45-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/store/</loc>
     <lastmod>2019-11-28T13:10:59-08:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>/posts/first-post/</loc>
-    <lastmod>2019-11-27T23:10:16-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
     <lastmod>2019-11-27T23:10:16-08:00</lastmod>
   </url>
   

@@ -71,7 +71,7 @@
 <script type="text/javascript">
 	var AllLi = document.getElementsByTagName( "li" );
 	var results = [];
-	var page  = 'Posts';
+	var page  = 'Hands, Colemak, Caps Lock, and MacOs';
 	for ( var x = 0; x < AllLi.length; x++ )
 	{
 		AllLi[x].className="";
@@ -96,18 +96,19 @@
 
 			
 			<article>
-				<h2>Posts</h2>
-				
+				<h2>Hands, Colemak, Caps Lock, and MacOs</h2>
+				<p>Recently I have experienced hand pain while typing. This pain can be attributed to excessively typing and practicing guitar. The standard procedures to alleviate the pain are:</p>
+<ol>
+<li>hand stretches</li>
+<li>finger exercises</li>
+<li>rest.</li>
+</ol>
+<p><strong>But</strong> I would rather be productive. Instead of resting my hands, I've been learning colemak, an alternate keyboard layout designed to minimize hand strain. One nice aspect about colemak is that it maps the caps lock key to backspace, minimizing key travel (<strong>more on this later</strong>). It's also navively supported on mac os (without caps lock remapping, must be implemented by user) and linux ( <em>windows users will have to use a colmak installer</em> ). Once I got it up and running, I realized that on a hackintosh setup, certain keyboards have an issue when remapping the caps lock key to backspace using an app like karabiner. Caps lock will still act like a toggle, leading to a bad time when deleting characters. After seveal failed attempts installing older versions of xcode (failing) and compiling unrunnable kexts, I found in the voodoops2controller.kext that you can edit the info.plist in voodoops2keyboard.kext and manually <a href="https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller/wiki/How-to-Install">remap ps2 keys</a>. After manually mapping caps lock to backspace (<code>3a=0e</code>), I rebooted my computer, finally assigning caps lock to a non-toggled backspace. As of writing, I can type around 13-15 wpm, but hopefully when Christmas rolls around, I'll be able to type at 60 wpm.</p>
+<p>Until then,</p>
+<p>~Justin</p>
+
 			</article>
-    		
-    	    <li>
-    	        <a href="/posts/colemak-and-caps-lock/"> 2019-12-05 | Hands, Colemak, Caps Lock, and MacOs</a>
-    	    </li>
-			
-    	    <li>
-    	        <a href="/posts/first-post/"> 2019-11-27 | First Post</a>
-    	    </li>
-			
+
 		</div>
 	</div>
 </div>
