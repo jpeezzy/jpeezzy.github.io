@@ -71,7 +71,7 @@
 <script type="text/javascript">
 	var AllLi = document.getElementsByTagName( "li" );
 	var results = [];
-	var page  = 'Posts';
+	var page  = 'Chromebooks, Coreboot, Colemak, Search Key?';
 	for ( var x = 0; x < AllLi.length; x++ )
 	{
 		AllLi[x].className="";
@@ -96,22 +96,27 @@
 
 			
 			<article>
-				<h2>Posts</h2>
-				
+				<h2>Chromebooks, Coreboot, Colemak, Search Key?</h2>
+				<p>I recently purchased an <a href="https://www.amazon.com/Intel-660p-1-0TB-80mm-978350/dp/B07GCL6BR4">Intel 660p</a> in order to dual boot MacOS and Windows 10 on one of my laptops. Unfortunately, I assumed that both of my laptop's m.2 nvme slots worked.</p>
+<p>I was wrong.</p>
+<p>I quickly bought a NVMe to USB-C/USB 3.0 enclosure on <a href="https://www.amazon.com/SSK-Aluminum-Enclosure-Adapter-External/dp/B07MNFH1PX/ref=sr_1_3?keywords=nvme+to+usb+c&amp;qid=1576124006&amp;s=electronics&amp;sr=1-3">amazon</a>. I decided that if I'm planning to use an enclosure, I might as well use the <a href="https://support.google.com/chromebook/answer/6164568?hl=en">Chromebook Pixel 2015</a> I had lying around.</p>
+<p>I first had to install coreboot on my chromebook to enable UEFI boot using <a href="https://mrchromebox.tech/#bootmodes">MrChromebox's coreboot installation</a>. I then installed Manjaro, a Linux distribution, with no issues.</p>
+<p>Initially I started to use Gnome; However, the stuttering animations led me to replace Gnome with sway, a tiling desktop manager. Unfortunately, most chromebooks do not have a dedicated caps lock key, instead replacing it with the WIN key. This small change made it more difficult to remap the WIN key to backspace. I stumbled on a <a href="https://github.com/swaywm/sway/issues/4250">solution</a> that required creating a new xkb symbols file. I created a file called <code>us-colemak-backspace</code> and added this code snippet into the file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">default partial alphanumeric_keys
+xkb_symbols <span style="color:#e6db74">&#34;basic&#34;</span> <span style="color:#f92672">{</span>
+	include <span style="color:#e6db74">&#34;us(colemak)&#34;</span>
+    name<span style="color:#f92672">[</span>Group1<span style="color:#f92672">]</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;US/ASCII&#34;</span>;
+	key &lt;LWIN&gt; <span style="color:#f92672">{</span> <span style="color:#f92672">[</span> BackSpace <span style="color:#f92672">]</span> <span style="color:#f92672">}</span>;
+<span style="color:#f92672">}</span>;
+</code></pre></div><p>I commented out the xkb layout imports and added <code>input * xkb_layout us-colemak-backspace</code> to my sway config file, and restarted sway using the</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">swaymsg reload
+</code></pre></div><p>commands. Right now sway needs alot of cosmetic work, but I'm satisfied.</p>
+<p>For some strange reason, the NVMe enclosure does not work with the USB-C &ndash; USB-C cable, but works with the USB-C &ndash; USB 3.0 cable. After verifying that the USB-C &ndash; USB-C cable actually works, I ordered a replacement unit arriving tommorow, hopefully solving the problem. If not, I'll have to do some more debugging.</p>
+<p>Until then,</p>
+<p>~Justin</p>
+
 			</article>
-    		
-    	    <li>
-    	        <a href="/posts/chromebook-search/"> 2019-12-10 | Chromebooks, Coreboot, Colemak, Search Key?</a>
-    	    </li>
-			
-    	    <li>
-    	        <a href="/posts/colemak-and-caps-lock/"> 2019-12-05 | Hands, Colemak, Caps Lock, and MacOs</a>
-    	    </li>
-			
-    	    <li>
-    	        <a href="/posts/first-post/"> 2019-11-27 | First Post</a>
-    	    </li>
-			
+
 		</div>
 	</div>
 </div>

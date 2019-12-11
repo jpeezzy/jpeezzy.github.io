@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Chromebooks, Coreboot, Colemak, Search Key?</title>
+      <link>/posts/chromebook-search/</link>
+      <pubDate>Tue, 10 Dec 2019 10:53:51 -0800</pubDate>
+      
+      <guid>/posts/chromebook-search/</guid>
+      <description>I recently purchased an Intel 660p in order to dual boot MacOS and Windows 10 on one of my laptops. Unfortunately, I assumed that both of my laptop&#39;s m.2 nvme slots worked.
+I was wrong.
+I quickly bought a NVMe to USB-C/USB 3.0 enclosure on amazon. I decided that if I&#39;m planning to use an enclosure, I might as well use the Chromebook Pixel 2015 I had lying around.
+I first had to install coreboot on my chromebook to enable UEFI boot using MrChromebox&#39;s coreboot installation.</description>
+    </item>
+    
+    <item>
       <title>Hands, Colemak, Caps Lock, and MacOs</title>
       <link>/posts/colemak-and-caps-lock/</link>
       <pubDate>Thu, 05 Dec 2019 13:24:45 -0800</pubDate>
