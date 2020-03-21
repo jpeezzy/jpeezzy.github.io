@@ -2,4 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-02-07T10:32:13-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/reflow-oven/</loc>
+    <lastmod>2020-02-07T10:32:13-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/chromebook-search/</loc>
+    <lastmod>2019-12-10T10:53:51-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/colemak-and-caps-lock/</loc>
+    <lastmod>2019-12-05T13:24:45-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/store/</loc>
+    <lastmod>2019-11-28T13:10:59-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-11-28T01:30:22-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/a/</loc>
+    <lastmod>2019-11-28T01:11:26-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/first-post/</loc>
+    <lastmod>2019-11-27T23:10:16-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-11-27T21:59:51-08:00</lastmod>
+  </url>
+  
 </urlset>

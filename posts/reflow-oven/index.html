@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html><head>
+	<title>møøn</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	
+	
+	
+	
+</head>
+
+
+<body class="is-preload homepage">
+	<div id="page-wrapper">
+
+		
+		<div id="header-wrapper">
+			<header id="header" class="container">
+
+				
+				<div id="logo">
+					<picture>
+						<source srcset="/images/flatmøøn_compressed.png" media="(min-width:40px)">
+							<img class="circular--square" src="/images/flatmøøn_compressed.png" >
+					</picture>
+							
+							
+				</div>
+
+			</header>
+		</div>
+		
+
+		
+		<div id="features-wrapper">
+			<div class="container">
+				<div class="row">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+	<nav id="nav">
+		<ul>
+			<li class="current"><a href="/index.html">Welcome</a></li>
+			<li>
+				<a href="#">Case Study</a>
+				<ul>
+					<li><a href="#">TBD</a></li>
+					<li><a href="#">TBD</a></li>
+					<li>
+						<a href="#">TBD</a>
+						<ul>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+						</ul>
+					</li>
+					<li><a href="#">TBD</a></li>
+				</ul>
+			</li>
+			<li><a href="/store">Store</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/posts">Archive</a></li>
+			
+<script type="text/javascript">
+	var AllLi = document.getElementsByTagName( "li" );
+	var results = [];
+	var page  = 'Reflow Oven';
+	for ( var x = 0; x < AllLi.length; x++ )
+	{
+		AllLi[x].className="";
+		if ( AllLi[x].innerText == page ) 
+			AllLi[x].className="current";
+	}
+</script>
+
+		</ul>
+	</nav>
+		
+<div id="banner-wrapper">
+</div>
+
+    <body><div id="content">
+
+
+
+<div id="main-wrapper">
+	<div class="container">
+		<div id="content">
+
+			
+			<article>
+				<h2>Reflow Oven</h2>
+				<p>I&rsquo;ve always wanted to build my own reflow oven for my personal projects. I found an article on <a href="https://hackaday.com/2019/03/10/diy-reflow-oven-is-heavily-documented/%5D">hackaday</a> showing how someone can make their own diy oven. I took a look at the <a href="https://github.com/botletics/Reflowduino">reflowduino github repo</a>, and found that this entire project is open source with both hardware and software information laid out. Unfortunately, the person who created the project is no longer building boards. Luckily, I found his <a href="https://oshpark.com/profiles/timwoo">Oshpark page</a> and was able to order a few PCBS and buy the necessary components on Mouser using the BOM provided. After working with the reflowduino, I quickly realized that I would have to pivot towards a new direction. Some problems with this project include:</p>
+<ol>
+<li>Not abiding with the ble standard / utilizing esp-if&rsquo;s api.</li>
+<li>Using the arduino IDE.</li>
+<li>Bad Android app.</li>
+<li>Thermocouple</li>
+<li>Cost</li>
+<li>Lack of control over the heating elements.</li>
+</ol>
+<p>This led me to <a href="https://www.whizoo.com/">whizoo</a>, a more complete project that resolves many of the issues that the reflowduino has. I bought a few <a href="https://www.ebay.com/itm/Solid-State-Relay-24V-380V-SSR-25DA-For-PID-Temperature-Controller-US-STOCK/174005805267?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D225086%26meid%3Dae7f172cc9dd4082aee83bdb64e863d2%26pid%3D100675%26rk%3D3%26rkt%3D15%26mehot%3Dnone%26sd%3D183958623887%26itm%3D174005805267%26pmt%3D1%26noa%3D1%26pg%3D2380057&amp;_trksid=p2380057.c100675.m4236&amp;_trkparms=pageci%3Ac65471fd-6732-11ea-a255-74dbd1802af9%7Cparentrq%3Ae14c41cf1700a99b3925e1baffd811d8%7Ciid%3A1">solid state relays</a> and got to work wiring the oven together. Instead of using an arduino and using it&rsquo;s god awful IDE, I decided to use the esp32 and its development api. Afterwards, I implemented the <a href="https://en.wikipedia.org/wiki/PID_controller#Derivative">PID algorithm</a>, adjusting the duty cycle of the top and bottom heating elements. To make the program a bit efficient, I used hardware timing interrupts for controlling the duty cycle. Overall, I&rsquo;m satisfied with the oven. Now onto enabling bluetooth!</p>
+<p><a href="https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html#get-started-get-esp-idf">https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html#get-started-get-esp-idf</a></p>
+
+			</article>
+
+		</div>
+	</div>
+</div>
+
+        </div><body>
+	
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<div class="row">
+				<div class="col-3 col-6-medium col-12-small">
+
+					
+					<section class="widget links">
+						<h3>Research Reading</h3>
+						<ul class="style2">
+							<li><a href="https://ieeexplore.ieee.org/document/6718086">
+									210 GHz Transceiver</a></li>
+							<li><a href="http://hunteng.co.uk/pdfs/tech/ddctheory.pdf">
+									Theory of Digital Down Conversion</a></li>
+							<li><a href="https://www.eetimes.com/document.asp?doc_id=1272436">
+									Power Condition Circuit</a></li>
+							<li><a href="https://www.allaboutcircuits.com/technical-articles/dsp-basics-of-digital-down-conversion-digital-signal-processing/">
+									 Basics of DDC in DSP</a></li>
+							<li><a href="#">TBD</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="col-3 col-6-medium col-12-small">
+
+					
+					<section class="widget links">
+						<h3>Self-improvement</h3>
+						<ul class="style2">
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="col-3 col-6-medium col-12-small">
+
+					
+					<section class="widget links">
+						<h3>Books to Read</h3>
+						<ul class="style2">
+							<li><a href="https://www.amazon.com/gp/product/0671212095/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=farnamstreet-20&creative=9325&linkCode=as2&creativeASIN=0671212095&linkId=95f640336f1079ee3b5acafcc3a34a84">
+									How to Read a Book by Adler</a></li>
+							<li><a href="https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X">
+									The Elements of Style</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+							<li><a href="#">TBD</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="col-3 col-6-medium col-12-small">
+
+					
+					<section class="widget contact last">
+						<h3>Contact Us</h3>
+						<ul>
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+						</ul>
+						<p>justidl3@uci.edu<br />
+							Los Angeles, CA<br />
+							TBD<br />
+							
+							
+					</section>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; møøn. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</div>
+
+	
+
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.dropotron.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body>
+</body>
+</html>
