@@ -71,7 +71,7 @@
 <script type="text/javascript">
 	var AllLi = document.getElementsByTagName( "li" );
 	var results = [];
-	var page  = 'Pynq Troubles: PS7, Hello World, and the pain to get there';
+	var page  = 'Pynq Troubles: PS7, Hello World, and the Pain to get There';
 	for ( var x = 0; x < AllLi.length; x++ )
 	{
 		AllLi[x].className="";
@@ -96,7 +96,7 @@
 
 			
 			<article>
-				<h2>Pynq Troubles: PS7, Hello World, and the pain to get there</h2>
+				<h2>Pynq Troubles: PS7, Hello World, and the Pain to get There</h2>
 				<p>Recently I&rsquo;ve started to do some work on my PYNQ-Z1 FPGA. It&rsquo;s a small toy intended for enthusiasts, as well as researchers interested in FPGAs. It uses the unique Zynq chipset, adding 2 ARM cores along with a PL. To use it as an FPGA, there are really a few simple steps. First, grab the [PYNQ][ https://github.com/Xilinx/PYNQ ] git repo and find the board files. Then import them into vivado by manually copying them into the boards directory. Create your project, and you should be good to go&hellip;If you&rsquo;re only planning to use the PL by itself. I came across an issue where the PS FCLKs were not working. The solution was simple: initialize the subsystem by running a simple hello_world application on the xilinx sdk. This will initialize the arm cores and the PS7 system, allowing the PL to access DDR SDRAM using the AXI4 interface. However; I got this message when uploading the elf to the PYNQ board: Memory write error at 0x100000. APB AP transaction error, DAP status f0000021.</p>
 <p>Clearly there was something I was missing. 0x100000 references DDR memory, and failed access errors indicate that the initialization process failed. On the xilinx sdk, there are run configurations that are useful to know. You can:</p>
 <ol>
