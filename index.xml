@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Pynq Troubles: PS7, Hello World, and the pain to get there</title>
+      <link>/posts/pynq-troubles-ps7/</link>
+      <pubDate>Tue, 07 Apr 2020 18:31:31 -0700</pubDate>
+      
+      <guid>/posts/pynq-troubles-ps7/</guid>
+      <description>Recently I&amp;rsquo;ve started to do some work on my PYNQ-Z1 FPGA. It&amp;rsquo;s a small toy intended for enthusiasts, as well as researchers interested in FPGAs. It uses the unique Zynq chipset, adding 2 ARM cores along with a PL. To use it as an FPGA, there are really a few simple steps. First, grab the [PYNQ][ https://github.com/Xilinx/PYNQ ] git repo and find the board files. Then import them into vivado by manually copying them into the boards directory.</description>
+    </item>
+    
+    <item>
       <title>Reflow Oven</title>
       <link>/posts/reflow-oven/</link>
       <pubDate>Fri, 07 Feb 2020 10:32:13 -0800</pubDate>
